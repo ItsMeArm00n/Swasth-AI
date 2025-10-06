@@ -181,7 +181,7 @@ export default function PrototypePage() {
                         </ul>
                       </div>
                       <div className="p-4 bg-secondary/5 rounded-lg border border-secondary/20">
-                        <h4 className="font-semibold text-secondary mb-2">Lifestyle Modifications</h4>
+                        <h4 className="font-semibold text-chart-5 mb-2">Lifestyle Modifications</h4>
                         <ul className="text-sm space-y-1 text-muted-foreground">
                           <li>• 30 minutes daily exercise</li>
                           <li>• Regular sleep schedule</li>

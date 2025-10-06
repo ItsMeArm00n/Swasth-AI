@@ -2,6 +2,7 @@ import { Navigation } from "@/components/navigation"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Target, Users, Zap, Globe, Lightbulb, Award } from "lucide-react"
+import Image from "next/image"
 
 export default function AboutPage() {
   return (
@@ -15,8 +16,9 @@ export default function AboutPage() {
               <Award className="h-3 w-3 mr-1" />
               Competition Project
             </Badge>
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-balance">
-              About <span className="gradient-text">SwastAI</span>
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-balance flex flex-col items-center gap-4">
+              <span>About</span>
+              <Image src="/swastai-logo.png" alt="SwastAI" width={300} height={75} />
             </h1>
             <p className="mt-6 text-lg leading-8 text-muted-foreground text-pretty max-w-2xl mx-auto">
               An innovative AI-powered solution designed to address India's most pressing health challenges through
@@ -34,10 +36,11 @@ export default function AboutPage() {
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
-              <p className="text-muted-foreground leading-7">
-                SwastAI is our proposed solution to democratize healthcare in India by leveraging artificial
-                intelligence for early detection of nutrition deficiencies and lifestyle diseases. This prototype
-                demonstrates how technology can bridge the gap between healthcare accessibility and affordability.
+              <p className="text-muted-foreground leading-7 flex items-center gap-2 flex-wrap">
+                <Image src="/swastai-logo.png" alt="SwastAI" width={120} height={30} className="inline-block" /> is our
+                proposed solution to democratize healthcare in India by leveraging artificial intelligence for early
+                detection of nutrition deficiencies and lifestyle diseases. This prototype demonstrates how technology
+                can bridge the gap between healthcare accessibility and affordability.
               </p>
               <div className="bg-primary/5 p-4 rounded-lg border border-primary/10">
                 <p className="text-sm text-muted-foreground italic">
@@ -65,7 +68,7 @@ export default function AboutPage() {
                   <div className="text-sm text-muted-foreground">Undernutrition Cases</div>
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-chart-4/10 to-chart-4/5 rounded-lg border border-chart-4/20">
-                  <div className="text-3xl font-bold text-chart-4 mb-1">70%</div>
+                  <div className="text-3xl font-bold text-chart-5 mb-1">70%</div>
                   <div className="text-sm text-muted-foreground">Vitamin Deficiencies</div>
                 </div>
                 <div className="text-center p-6 bg-gradient-to-br from-chart-5/10 to-chart-5/5 rounded-lg border border-chart-5/20">
@@ -103,7 +106,7 @@ export default function AboutPage() {
                 <CardHeader>
                   <div className="flex items-center space-x-3">
                     <div className="p-2 bg-secondary/10 rounded-lg">
-                      <Users className="h-6 w-6 text-secondary" />
+                      <Users className="h-6 w-6 text-chart-5" />
                     </div>
                     <CardTitle>Universal Accessibility</CardTitle>
                   </div>

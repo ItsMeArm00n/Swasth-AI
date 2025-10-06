@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { Activity, Brain, MessageCircle, Shield, Zap, Heart, Pill, TrendingUp } from "lucide-react"
+import Image from "next/image"
 
 export default function FeaturesPage() {
   return (
@@ -65,7 +66,7 @@ export default function FeaturesPage() {
               <CardHeader>
                 <div className="flex items-center space-x-3 mb-2">
                   <div className="p-2 bg-secondary/10 rounded-lg">
-                    <Activity className="h-6 w-6 text-secondary" />
+                    <Activity className="h-6 w-6 text-chart-5" />
                   </div>
                   <Badge variant="outline" className="text-xs">
                     Predictive AI
@@ -152,7 +153,7 @@ export default function FeaturesPage() {
               <Card className="text-center card-hover animate-slide-in-left" style={{ animationDelay: "0.6s" }}>
                 <CardHeader>
                   <div className="mx-auto p-3 bg-secondary/10 rounded-lg w-fit">
-                    <Shield className="h-8 w-8 text-secondary" />
+                    <Shield className="h-8 w-8 text-chart-5" />
                   </div>
                   <CardTitle className="text-lg">Data Security</CardTitle>
                 </CardHeader>
@@ -194,15 +195,19 @@ export default function FeaturesPage() {
           >
             <CardContent className="text-center py-12">
               <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Ready to Experience AI-Powered Health Analysis?</h3>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Try our prototype and see how SwastAI can help you take control of your health with personalized
-                insights and recommendations.
+              <h3 className="text-2xl font-bold mb-4 flex flex-col items-center gap-3">
+                <span>Ready to Experience</span>
+                <Image src="/swastai-logo.png" alt="SwastAI" width={200} height={50} />
+                <span>AI-Powered Health Analysis?</span>
+              </h3>
+              <p className="mt-6 text-lg leading-8 text-muted-foreground text-pretty max-w-2xl mx-auto">
+                Try our prototype and see how we can help you take control of your health with personalized insights and
+                recommendations.
               </p>
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90"
+                className="mt-8 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90"
               >
                 <Link href="/prototype">Try Prototype Now</Link>
               </Button>

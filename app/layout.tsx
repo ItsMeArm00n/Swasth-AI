@@ -7,7 +7,7 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "NutriPredict - AI-Powered Nutrition & Health Analyzer",
+  title: "Swasth Ai - AI-Powered Nutrition & Health Analyzer",
   description: "Early detection of nutrition deficiencies & lifestyle diseases, powered by AI",
   generator: "v0.app",
 }
